@@ -1,7 +1,7 @@
 # sla-breach-prediction
 Predicting SLA breaches using early ticket behavior and logistic regression
 
-Problem Statement
+# Problem Statement
 
 Service tickets often breach SLA due to delayed response and inactivity.
 This project aims to predict SLA breaches using only the first 48 hours of ticket activity.
@@ -22,7 +22,7 @@ Time to first update – Initial response delay
 
 These features capture responsiveness and early engagement patterns.
 
-Model Development
+# Model Development
 
 Train/Test Split: 70% training / 30% testing
 
@@ -30,19 +30,9 @@ Stratified sampling to maintain class balance
 
 Feature Scaling using StandardScaler
 
-Model: Logistic Regression
+# Model: Logistic Regression
 
-Model Development
-
-Train/Test Split: 70% training / 30% testing
-
-Stratified sampling to maintain class balance
-
-Feature Scaling using StandardScaler
-
-Model: Logistic Regression
-
-Model Performance
+# Model Performance
 Metric	Value
 ROC-AUC	0.65
 Default Recall (Breach)	15%
@@ -50,7 +40,7 @@ Optimized Recall (Threshold = 0.35)	51%
 Precision at Optimized Threshold	~49%
 Accuracy	~63%
 
-Key Insights
+# Key Insights
 
 Slow time to first response is the strongest predictor of SLA breach.
 
@@ -60,17 +50,7 @@ Raw update frequency alone is not a strong predictor.
 
 Early behavioral signals contain meaningful predictive power (AUC = 0.65).
 
-Future Improvements
-
-Implement Random Forest for performance comparison
-
-Add Precision-Recall curve visualization
-
-Perform hyperparameter tuning
-
-Explore full lifecycle feature modeling
-
-Future Improvements
+# Future Improvements
 
 Implement Random Forest for performance comparison
 
