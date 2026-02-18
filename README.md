@@ -1,5 +1,5 @@
 # sla-breach-prediction
-Predicting SLA breaches using early ticket behavior and logistic regression
+Machine learning model to predict SLA breaches using early 48-hour ticket activity signals (ROC-AUC 0.65, recall improved to 51% via threshold tuning)
 
 
 # Problem Statement
